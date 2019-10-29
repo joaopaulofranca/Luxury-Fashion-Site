@@ -23,11 +23,14 @@ body html {
     background-color: white;
 }
 
-.content {
-    width: 100%;
-    height: 400px;
+.content {}
+
+.bgImagem {
+    width: auto;
+    height: 600px;
     background: no-repeat;
-    background-image: url(../img/imagens/luxury.png);
+    background-size: cover;
+    background-image: url(../img/imagens/swift\(1\).jpg);
 }
 
 .content2 {
@@ -75,7 +78,7 @@ body html {
 #menu ul li a {
     margin-left: 10%;
     margin-top: 2%;
-    color: #333;
+    color: lightgrey;
     text-decoration: none;
     float: left;
     transition: all 0.5s;
@@ -132,7 +135,7 @@ button {
 }
 
 button:hover {
-    background-color: tomato;
+    background-color: #daa520;
 }
 
 #msg {
@@ -143,13 +146,28 @@ button:hover {
 
 /*GALERIA LOOK*/
 
+.media {
+    overflow: hidden;
+    max-width: 300px;
+    max-height: 300px;
+    float: left;
+}
+
+.center {
+    margin-left: 6%;
+}
+
 .galeriaOne {
-    transition: all 0.5s;
+    max-width: 100%;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
 }
 
 .galeriaOne:hover {
-    -webkit-transform: scale(0.9);
-    -ms-transform: scale(0.9);
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 
@@ -176,9 +194,9 @@ button:hover {
 }
 
 #txtbusca {
-    border-radius: 8px gray;
+    border-radius: 20% gray;
     width: 530px;
-    height: 10px;
+    height: 8px;
     padding: 5px 0 5px 5px;
     margin-top: 1%;
 }
@@ -222,7 +240,7 @@ button:hover {
     width: auto;
     height: auto;
     background: no-repeat;
-    background-image: url(../img/imagens/bg4.jpg);
+    background-image: url(../img/imagens/bgss.jpg);
     background-size: cover;
 }
 
@@ -307,4 +325,29 @@ button:hover {
     height: 300px;
     background: no-repeat;
     background-image: url(../img/imagens/roupaF.png);
+}
+
+.rodapeCar {
+    width: 100%;
+    height: 20%;
+    background-image: linear-gradient(to top, gray, white);
+}
+
+#infoCar {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#infoCar ul li {
+    margin-top: 5px;
+    text-align: center;
+    margin-left: 10%;
+    display: inline;
+}
+
+.carrinho {
+    width: auto;
+    height: 500px;
+    background: no-repeat;
+    background-image: url(../img/imagens/descontao.jpg);
+    background-size: cover;
 }
